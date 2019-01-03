@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>MIKHMON QR CODE SCANNER</title>
+<title>QR CODE SCANNER</title>
   <style>
     video {
       width: 100%    !important;
@@ -62,6 +62,8 @@
       }  
     }
   </style>
+<script type="text/javascript" src="llqrcode.js"></script>
+<script type="text/javascript" src="webqr.js"></script>
 </head>
 <body>
   <center>
@@ -91,13 +93,13 @@
         </div>
       </div>
     </div>
-    <div>MIKHMON QR CODE SCANNER <br>Powered by <a href="http://www.webqr.com">webqr.com</a></div>
+    <div>QR CODE SCANNER <br>Powered by <a href="http://sangdesains.blogspot.com">SangDesains</a></div>
   </center>
 <canvas style="display:none;" id="qr-canvas" width="800" height="600"></canvas>
 <script type="text/javascript">load();</script>
 <script>
   function openInChrome(){
-  String url = "http://sangdesains.github.io";
+  String url = "https://sangdesains.github.io/";
     try {
         Intent i = new Intent("android.intent.action.MAIN");
         i.setComponent(ComponentName.unflattenFromString("com.android.chrome/com.android.chrome.Main"));
